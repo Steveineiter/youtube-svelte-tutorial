@@ -6,6 +6,13 @@ From https://www.youtube.com/watch?v=8DQailPy3q8&t=83s
 - Typical setup is script tag, then html, then css.
 - Runes are stuff like $state, $props etc. 
 - States are really powerful in svelte. Nice to see which values are changing. 
+- JSON.stringify(variable) to print variable on webpage. 
+- $effect and lifecycle cool for animation and that it will run after change. With effect we can listen if stuff is changing. 
+  - Normally we use the return in it for a clean up process. 
+  - DONT create state based of ohter state in effect, for that we have $derived.
+- There are many more runes which we haven't discuessed, check out svelt documentation. Often we don't need those / are advanced concepts tho.
+- $inspect nice for debugging, pretty much a watch in console log. 
+- Cool thing is that we have eg animations in svelte because it doesn't bloat our application, since we compile it. He said its amazing that the animatin exists with so little code.
 
 ## Style
 - if we have css / style in a file, eg for div, it wont affect other files. Aka we can write local/scoped CSS but also global CSS styles. Aka we do not have to think too much about naming htings which is nice. Because else we have often repetition within a file (with class tag etc.)
