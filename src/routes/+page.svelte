@@ -76,7 +76,7 @@
             question: "What's your name",
             id: "name",
             type: "text"
-        })} -->
+        })} --> 
     <!-- {#each QUESTIONS as {id, question, type} (id)}
         {@render formStep({question, id, type})} -->
 
