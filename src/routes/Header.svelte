@@ -1,10 +1,24 @@
 <script lang="ts">
-
+    let {
+        name
+    } : {
+        name: string
+    } = $props();
 </script>
 
-<h1> Hello from Header</h1>
+<!-- <div class="header"> -->
+ <div>
+    <!-- {#if name}
+        <h1>{name}'s Form'</h1>
+    {/if} -->
+    <h1>
+        {name ? name : "User"}
+    </h1>
+</div>
 
 
-
-<style>
-</style>
+<!-- <style>
+    div {
+        background: red;
+    }
+</style> -->
